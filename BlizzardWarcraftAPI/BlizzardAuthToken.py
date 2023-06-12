@@ -3,8 +3,7 @@ from .urls import URL_ACCESS_TOKEN_REQUEST
 from .exceptions import BlizzardAuthTokenError
 
 
-class BlizzardAuthToken():
-
+class BlizzardAuthToken:
     def __init__(self, ClientID: str, ClientSecret: str):
         self.grant_type: str = "client_credentials"
         self.ClientID: str = ClientID
@@ -14,7 +13,7 @@ class BlizzardAuthToken():
         data = {
             "grant_type": self.grant_type,
             "client_id": self.ClientID,
-            "client_secret": self.ClientSecret
+            "client_secret": self.ClientSecret,
         }
 
         response = requests.post(URL_ACCESS_TOKEN_REQUEST, data=data)
