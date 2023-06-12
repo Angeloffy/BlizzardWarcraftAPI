@@ -1,28 +1,53 @@
 import requests
 from requests.models import Response
-from BlizzardAuthToken import BlizzardAuthToken
-
+from data import region_data, locales_region_data
+from exceptions import BlizzardWarcraftApiError
+from urls import URL_TOKEN_VALIDATION
 
 class BlizzardWarcraftAPI():
 
-    def __init__(self, ClientID: str, ClientSecret: str, region: str, locale: str = "en_GB"):
-        self.ClientID: str = ClientID
-        self.ClientSecret: str = ClientSecret
-        self.region = region
-        self.locale = locale
-        self.BlizzardAuthToken = BlizzardAuthToken(self.ClientID, self.ClientSecret).get()
+    @staticmethod
+    def __valid_region(region):
+        if region in region_data:
+            return True
+        else:
+            text = f"Region must be: {region_data}"
+            raise BlizzardWarcraftApiError(text)
 
     @staticmethod
-    def __request_get(url, data):
-        print(requests.get(url, params=data).url)
-        return requests.get(url, params=data)
+    def __valid_locale(region, locale):
+        locales = locales_region_data.get(region)
+        if locale in locales:
+            return True
+        else:
+            text = f"Region must be for {region}: {locales}"
+            raise BlizzardWarcraftApiError(text)
 
-    def get_CharacterAchievementsSummary(self, realmSlug: str, characterName: str) -> Response:
+    @staticmethod
+    def __valid_BlizzardAuthToken(token):
         data = {
-            "namespace": "profile-eu",
-            "locale": "ru_RU",
-            "access_token": self.BlizzardAuthToken
+            "token": token,
         }
-        url = f"https://eu.api.blizzard.com/profile/wow/character/{realmSlug}/{characterName.lower()}/achievements"
 
-        return self.__request_get(url, data)
+        response = requests.post(URL_TOKEN_VALIDATION, data=data)
+        response_data = response.json()
+
+        if "error" not in response_data:
+            return True
+        else:
+            text = response_data["error"] + " - " + response_data["error_description"]
+            raise BlizzardWarcraftApiError(text)
+
+    def __init__(self, BlizzardAuthToken, region: str, locale: str = "en_GB"):
+
+        if self.__valid_BlizzardAuthToken(BlizzardAuthToken):
+            self.BlizzardAuthToken = BlizzardAuthToken
+
+        region = region.lower()
+        if self.__valid_region(region):
+            self.region = region
+
+        if self.__valid_locale(self.region, locale):
+            self.locale = locale
+
+        self.namespace = "profile-" + self.region
