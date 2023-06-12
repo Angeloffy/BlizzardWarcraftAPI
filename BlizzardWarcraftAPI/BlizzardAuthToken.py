@@ -1,5 +1,6 @@
 import requests
-from urls import URL_ACCESS_TOKEN_REQUEST
+from urls import URL_ACCESS_TOKEN_REQUEST, URL_TOKEN_VALIDATION
+from exceptions import BlizzardAuthTokenError
 
 
 class BlizzardAuthToken():
@@ -15,6 +16,12 @@ class BlizzardAuthToken():
             "client_id": self.ClientID,
             "client_secret": self.ClientSecret
         }
+
         response = requests.post(URL_ACCESS_TOKEN_REQUEST, data=data)
         response_data = response.json()
-        return response_data["access_token"]
+
+        if "error" not in response_data:
+            return response_data["access_token"]
+        else:
+            text = response_data["error"] + " - " + response_data["error_description"]
+            raise BlizzardAuthTokenError(text)
