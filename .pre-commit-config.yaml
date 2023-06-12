@@ -10,3 +10,10 @@ repos:
       pass_filenames: false
       language: system
       always_run: true
+      
+    - id: reorder-python-imports
+      name: reorder-python-imports
+      entry: reorder-python-imports
+      language: system
+      types: [python]
+      args: [--py37-plus]
