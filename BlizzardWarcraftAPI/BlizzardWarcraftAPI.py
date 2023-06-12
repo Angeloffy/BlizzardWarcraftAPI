@@ -1,8 +1,8 @@
 import requests
 from requests.models import Response
-from data import region_data, locales_region_data
-from exceptions import BlizzardWarcraftApiError
-from urls import URL_TOKEN_VALIDATION
+from .data import region_data, locales_region_data
+from .exceptions import BlizzardWarcraftApiError
+from .urls import URL_TOKEN_VALIDATION
 
 class BlizzardWarcraftAPI():
 

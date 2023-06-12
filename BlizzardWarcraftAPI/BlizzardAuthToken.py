@@ -1,6 +1,6 @@
 import requests
-from urls import URL_ACCESS_TOKEN_REQUEST, URL_TOKEN_VALIDATION
-from exceptions import BlizzardAuthTokenError
+from .urls import URL_ACCESS_TOKEN_REQUEST
+from .exceptions import BlizzardAuthTokenError
 
 
 class BlizzardAuthToken():
