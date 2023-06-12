@@ -3,4 +3,4 @@ __pycache__
 venv
 .env
 dist
-.egg-info
+*.egg-info/
