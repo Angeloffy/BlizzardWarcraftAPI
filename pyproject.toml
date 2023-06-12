@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BlizzardWarcraftAPI"
+version = "0.0.1"
+authors = [
+    {name = "Angeloffy", email = "angeloffy.work@gmail.com"},
+]
+description = "Warcraft API"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "requests"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Angeloffy/BlizzardWarcraftAPI/tree/main"
+"Bug Tracker" = "https://github.com/Angeloffy/BlizzardWarcraftAPI/issues"
