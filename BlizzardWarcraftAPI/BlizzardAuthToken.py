@@ -3,8 +3,14 @@ from .urls import URL_ACCESS_TOKEN_REQUEST
 from .exceptions import BlizzardAuthTokenError
 
 
-class BlizzardAuthToken:
+class BlizzardAuthToken():
     def __init__(self, ClientID: str, ClientSecret: str):
+        """
+        Get from https://develop.battle.net/access/clients
+
+        :param str ClientID:
+        :param str ClientSecret:
+        """
         self.grant_type: str = "client_credentials"
         self.ClientID: str = ClientID
         self.ClientSecret: str = ClientSecret
