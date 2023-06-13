@@ -5,6 +5,7 @@ from ..urls import URL_TOKEN_VALIDATION
 
 
 class BlizzardWarcraftAPI():
+
     @staticmethod
     def __valid_region(region):
         if region in region_data:
@@ -37,7 +38,7 @@ class BlizzardWarcraftAPI():
             text = response_data["error"] + " - " + response_data["error_description"]
             raise BlizzardWarcraftApiError(text)
 
-    def __init__(self, BlizzardAuthToken, region: str, locale: str = "en_GB"):
+    def __init__(self, BlizzardAuthToken, region: str, locale: str):
 
         if self.__valid_BlizzardAuthToken(BlizzardAuthToken):
             self.BlizzardAuthToken = BlizzardAuthToken
@@ -51,3 +52,4 @@ class BlizzardWarcraftAPI():
 
         self.namespace_profile = "profile-" + self.region
         self.namespace_static = "static-" + self.region
+        self.namespace_dynamic = "dynamic-" + self.region
