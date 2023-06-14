@@ -17,22 +17,48 @@ class AchievementAPI(BlizzardWarcraftAPI):
         resp = requests.get(url, params=param)
         return resp.json()
 
-    def get_AchievementCategoriesIndex(self):
+    def get_AchievementCategoriesIndex(self) -> dict:
+        """
+        :return: an index of achievement categories.
+        :rtype: dict
+        """
         url = f"https://{self.region}.api.blizzard.com/data/wow/achievement-category/index"
         return self.response(url, self.param)
 
-    def get_AchievementCategory(self, achievementCategoryId: int):
+    def get_AchievementCategory(self, achievementCategoryId: int) -> dict:
+        """
+        :param achievementCategoryId: Achievement category id
+        :type achievementCategoryId: int
+        :return: an achievement category by ID.
+        :rtype: dict
+        """
         url = f"https://{self.region}.api.blizzard.com/data/wow/achievement-category/{achievementCategoryId}"
         return self.response(url, self.param)
 
-    def get_AchievementsIndex(self):
+    def get_AchievementsIndex(self) -> dict:
+        """
+        :return: an index of achievements.
+        :rtype: dict
+        """
         url = f"https://{self.region}.api.blizzard.com/data/wow/achievement/index"
         return self.response(url, self.param)
 
-    def get_Achievement(self, achievementId):
+    def get_Achievement(self, achievementId) -> dict:
+        """
+        :param achievementId: Achievement id
+        :type achievementId: int
+        :return: an achievement by ID.
+        :rtype: dict
+        """
         url = f"https://{self.region}.api.blizzard.com/data/wow/achievement/{achievementId}"
         return self.response(url, self.param)
 
-    def get_AchievementMedia(self, achievementId):
+    def get_AchievementMedia(self, achievementId) -> dict:
+        """
+        :param achievementId: Achievement id
+        :type achievementId: int
+        :return: media for an achievement by ID.
+        :rtype: dict
+        """
         url = f"https://{self.region}.api.blizzard.com/data/wow/media/achievement/{achievementId}"
         return self.response(url, self.param)
