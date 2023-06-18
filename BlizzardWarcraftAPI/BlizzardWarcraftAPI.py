@@ -1,14 +1,18 @@
-from .modules import AchievementAPI
+from .modules import \
+    AchievementAPI, AuctionHouseAPI, \
+    ConnectedRealmAPI, CharacterAchievementsAPI, \
+    CharacterAppearanceAPI
 
 
-class BlizzardWarcraftAPI(AchievementAPI):
+class BlizzardWarcraftAPI(AuctionHouseAPI, AchievementAPI,
+                          ConnectedRealmAPI, CharacterAchievementsAPI,
+                          CharacterAppearanceAPI):
     """
-    Use BlizzardAuthToken class for generate access token
-    :param str BlizzardAuthToken: access_token
-    :param str region: "us", "eu", "kr", "tw"
-    :param locale: "en_US", "es_MX", "pt_BR", "en_GB",
-            "es_ES", "fr_FR", "ru_RU", "de_DE",
-            "pt_PT", "it_IT", "ko_KR","zh_TW"
+    Use BlizzardAuthToken class for generate access token.
+
+    :param str BlizzardAuthToken: Access token.
+    :param str region: The region of the data to retrieve.
+    :param locale: The locale to reflect in localized data.
 
     :type BlizzardAuthToken: str
     :type region: str

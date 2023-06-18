@@ -5,6 +5,10 @@ from ..urls import URL_TOKEN_VALIDATION
 
 
 class BlizzardWarcraftAPI():
+    @staticmethod
+    def response(url, param):
+        resp = requests.get(url, params=param)
+        return resp.json()
 
     @staticmethod
     def __valid_region(region):
@@ -53,3 +57,8 @@ class BlizzardWarcraftAPI():
         self.namespace_profile = "profile-" + self.region
         self.namespace_static = "static-" + self.region
         self.namespace_dynamic = "dynamic-" + self.region
+
+        self.param = {
+            "locale": self.locale,
+            "access_token": self.BlizzardAuthToken
+        }
