@@ -15,12 +15,25 @@ pip install BlizzardWarcraftAPI
 ```
 
 # A Simple Example
+
 ```python
 from BlizzardWarcraftAPI import BlizzardWarcraftAPI, BlizzardAuthToken
-
 
 token = BlizzardAuthToken("ClientID", "ClientSecret").get()
 
 warcraft = BlizzardWarcraftAPI(token, region, locale)
-warcraft.get_AchievementCategoriesIndex()
+warcraft.get_AchievementCategoriesIndex
 ```
+
+# [APIs](https://develop.battle.net/documentation/world-of-warcraft)
+
+## [Game Data](https://develop.battle.net/documentation/world-of-warcraft/game-data-apis)
+
+- [x] Achievement
+- [x] Auction House
+- [x] Connected Realm
+
+## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
+
+- [x] Character Achievements
+- [x] Character Appearance
