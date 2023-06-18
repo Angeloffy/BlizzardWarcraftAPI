@@ -1,1 +1,5 @@
 from .AchievementAPI import AchievementAPI
+from .AuctionHouseAPI import AuctionHouseAPI
+from .ConnectedRealmAPI import ConnectedRealmAPI
+from .CharacterAchievementsAPI import CharacterAchievementsAPI
+from .CharacterAppearanceAPI import CharacterAppearanceAPI
