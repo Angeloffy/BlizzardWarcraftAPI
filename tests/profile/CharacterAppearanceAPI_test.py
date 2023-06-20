@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from test_base import BlizzardWarcraftAPI_test
+from tests.test_base import BlizzardWarcraftAPI_test
 from unittest import TestCase
 
 

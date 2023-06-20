@@ -1,7 +1,4 @@
-from .modules import \
-    AchievementAPI, AuctionHouseAPI, \
-    ConnectedRealmAPI, CharacterAchievementsAPI, \
-    CharacterAppearanceAPI
+from .modules import *
 
 
 class BlizzardWarcraftAPI(AuctionHouseAPI, AchievementAPI,

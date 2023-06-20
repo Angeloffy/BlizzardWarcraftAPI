@@ -1,5 +1,9 @@
-from .AchievementAPI import AchievementAPI
-from .AuctionHouseAPI import AuctionHouseAPI
-from .ConnectedRealmAPI import ConnectedRealmAPI
-from .CharacterAchievementsAPI import CharacterAchievementsAPI
-from .CharacterAppearanceAPI import CharacterAppearanceAPI
+from .gameData.AchievementAPI import AchievementAPI
+from .gameData.AuctionHouseAPI import AuctionHouseAPI
+from .gameData.ConnectedRealmAPI import ConnectedRealmAPI
+
+from .profile.CharacterAchievementsAPI import CharacterAchievementsAPI
+from .profile.CharacterAppearanceAPI import CharacterAppearanceAPI
+from .profile.CharacterCollectionsAPI import CharacterCollectionsAPI
+
+from BlizzardWarcraftAPI.BlizzardAuthToken import BlizzardAuthToken

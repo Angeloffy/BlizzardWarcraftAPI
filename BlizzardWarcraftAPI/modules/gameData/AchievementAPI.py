@@ -1,5 +1,5 @@
 import requests
-from .BlizzardWarcraftAPI_base import BlizzardWarcraftAPI
+from BlizzardWarcraftAPI.modules.BlizzardWarcraftAPI_base import BlizzardWarcraftAPI
 
 
 class AchievementAPI(BlizzardWarcraftAPI):
