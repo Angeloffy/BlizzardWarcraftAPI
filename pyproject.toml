@@ -1,26 +1,31 @@
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "BlizzardWarcraftAPI"
 version = "0.1.0"
-authors = [
-    {name = "Angeloffy", email = "angeloffy.work@gmail.com"},
+authors = ["Angeloffy <angeloffy.work@gmail.com>"]
+maintainers = [
+    "Angeloffy <angeloffy.work@gmail.com>",
+    "Kotorkovsciy <kotorkovsciy@gmail.com>"
 ]
 description = "Warcraft API"
 readme = "README.md"
-requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3.9",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+license = "MIT"
+homepage = "https://github.com/Angeloffy/BlizzardWarcraftAPI/tree/main"
+repository = "https://github.com/Angeloffy/BlizzardWarcraftAPI/"
 
-dependencies = [
-    "requests"
-]
-
-[project.urls]
-"Homepage" = "https://github.com/Angeloffy/BlizzardWarcraftAPI/tree/main"
+[tool.poetry.urls]
 "Bug Tracker" = "https://github.com/Angeloffy/BlizzardWarcraftAPI/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

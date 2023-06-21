@@ -1,13 +1,16 @@
 repos:
 - repo: local
   hooks:
-    - id: tests
-      name: tests
-      entry: |
-        venv\\Scripts\\activate.bat
-        python -m unittest discover tests/gameData -p '*_test.py'
-        python -m unittest discover tests/profile -p '*_test.py'
-      types: [python]
+    - id: test-profile
+      name: test profile
+      entry: poetry run python -m unittest discover tests/profile -p '*_test.py'
       pass_filenames: false
       language: system
-      always_run: true
+      files: ^(pyproject.toml|poetry.lock)$
+
+    - id: test-game-data
+      name: test game data
+      entry: poetry run python -m unittest discover tests/gameData -p '*_test.py'
+      pass_filenames: false
+      language: system
+      files: ^(pyproject.toml|poetry.lock)$
