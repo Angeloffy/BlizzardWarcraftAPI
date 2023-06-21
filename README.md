@@ -37,3 +37,7 @@ warcraft.get_AchievementCategoriesIndex
 
 - [x] Character Achievements
 - [x] Character Appearance
+- [x] Character Collections
+- [x] Character Encounters
+- [x] Character Equipment
+- [x] Character Hunter Pets
