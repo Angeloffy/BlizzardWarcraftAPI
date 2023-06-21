@@ -3,7 +3,9 @@ from .modules import *
 
 class BlizzardWarcraftAPI(AuctionHouseAPI, AchievementAPI,
                           ConnectedRealmAPI, CharacterAchievementsAPI,
-                          CharacterAppearanceAPI):
+                          CharacterAppearanceAPI, CharacterCollectionsAPI,
+                          CharacterEncountersAPI, CharacterEquipmentAPI,
+                          CharacterHunterPetsAPI):
     """
     Use BlizzardAuthToken class for generate access token.
 
