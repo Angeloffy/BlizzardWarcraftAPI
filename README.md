@@ -32,6 +32,7 @@ warcraft.get_AchievementCategoriesIndex
 - [x] Achievement
 - [x] Auction House
 - [x] Connected Realm
+- [x] Creature
 
 ## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
 

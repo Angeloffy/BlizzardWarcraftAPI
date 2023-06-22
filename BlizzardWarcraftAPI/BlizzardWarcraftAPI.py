@@ -5,7 +5,7 @@ class BlizzardWarcraftAPI(AuctionHouseAPI, AchievementAPI,
                           ConnectedRealmAPI, CharacterAchievementsAPI,
                           CharacterAppearanceAPI, CharacterCollectionsAPI,
                           CharacterEncountersAPI, CharacterEquipmentAPI,
-                          CharacterHunterPetsAPI):
+                          CharacterHunterPetsAPI, CreatureAPI):
     """
     Use BlizzardAuthToken class for generate access token.
 
