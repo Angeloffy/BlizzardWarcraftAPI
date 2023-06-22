@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from BlizzardWarcraftAPI import BlizzardWarcraftAPI, BlizzardAuthToken
+from blizzardwarcraftapi import BlizzardWarcraftAPI, BlizzardAuthToken
 
 load_dotenv()
 

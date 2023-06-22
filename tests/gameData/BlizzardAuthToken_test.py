@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from unittest import TestCase
-from BlizzardWarcraftAPI import BlizzardAuthToken
+from blizzardwarcraftapi import BlizzardAuthToken
 
 load_dotenv()
 
