@@ -1,2 +1,2 @@
-from BlizzardWarcraftAPI.BlizzardWarcraftAPI import BlizzardWarcraftAPI
-from BlizzardWarcraftAPI.BlizzardAuthToken import BlizzardAuthToken
+from blizzardwarcraftapi.BlizzardWarcraftAPI import BlizzardWarcraftAPI
+from blizzardwarcraftapi.BlizzardAuthToken import BlizzardAuthToken

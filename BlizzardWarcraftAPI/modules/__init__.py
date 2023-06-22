@@ -9,4 +9,4 @@ from .profile.CharacterEncountersAPI import CharacterEncountersAPI
 from .profile.CharacterEquipmentAPI import CharacterEquipmentAPI
 from .profile.CharacterHunterPetsAPI import CharacterHunterPetsAPI
 
-from BlizzardWarcraftAPI.BlizzardAuthToken import BlizzardAuthToken
+from blizzardwarcraftapi.BlizzardAuthToken import BlizzardAuthToken
