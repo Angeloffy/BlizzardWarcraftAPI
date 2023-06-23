@@ -7,10 +7,10 @@ from unittest import TestCase
 class Test_AuctionHouseAPI(BlizzardWarcraftAPI_test, TestCase):
 
     def test_ConnectedRealmsIndex(self):
-        self.BlizzardWarcraftAPI.get_ConnectedRealmsIndex()
+        self.GameData.get_ConnectedRealmsIndex()
 
     def test_ConnectedRealm(self):
-        self.BlizzardWarcraftAPI.get_ConnectedRealm(1080)
+        self.GameData.get_ConnectedRealm(1080)
 
     def test_ConnectedRealmsSearch(self):
-        self.BlizzardWarcraftAPI.get_ConnectedRealmsSearch("UP", "America/New_York", "id", 1)
+        self.GameData.get_ConnectedRealmsSearch("UP", "America/New_York", "id", 1)
