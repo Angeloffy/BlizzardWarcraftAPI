@@ -13,4 +13,6 @@ class BlizzardWarcraftAPI_test():
         self.region = "eu"
         self.locale = "en_GB"
 
-        self.BlizzardWarcraftAPI = BlizzardWarcraftAPI(self.token, self.region, self.locale)
+        api = BlizzardWarcraftAPI(self.token, self.region, self.locale)
+        self.GameData = api.GameData()
+        self.Profile = api.Profile()

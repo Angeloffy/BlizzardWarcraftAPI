@@ -1,11 +1,7 @@
 from .modules import *
 
 
-class BlizzardWarcraftAPI(AuctionHouseAPI, AchievementAPI,
-                          ConnectedRealmAPI, CharacterAchievementsAPI,
-                          CharacterAppearanceAPI, CharacterCollectionsAPI,
-                          CharacterEncountersAPI, CharacterEquipmentAPI,
-                          CharacterHunterPetsAPI):
+class BlizzardWarcraftAPI:
     """
     Use BlizzardAuthToken class for generate access token.
 
@@ -17,6 +13,28 @@ class BlizzardWarcraftAPI(AuctionHouseAPI, AchievementAPI,
     :type region: str
     :type locale: str
     """
-    def __init__(self, BlizzardAuthToken, region: str, locale: str):
-        super().__init__(BlizzardAuthToken, region, locale)
+    def __init__(self, BlizzardAuthToken: str, region: str, locale: str):
+        BlizzardWarcraftAPI.BlizzardAuthToken = BlizzardAuthToken
+        BlizzardWarcraftAPI.region = region
+        BlizzardWarcraftAPI.locale = locale
+
+    class GameData(AchievementAPI, AuctionHouseAPI, ConnectedRealmAPI, CreatureAPI):
+        """
+        The World of Warcraft game data APIs encompass both static and dynamic game data.
+        https://develop.battle.net/documentation/world-of-warcraft/game-data-apis
+        """
+        def __init__(self):
+            super().__init__(BlizzardWarcraftAPI.BlizzardAuthToken, BlizzardWarcraftAPI.region, BlizzardWarcraftAPI.locale)
+
+    class Profile(CharacterAchievementsAPI, CharacterCollectionsAPI,
+                  CharacterEquipmentAPI, CharacterEncountersAPI,
+                  CharacterHunterPetsAPI, CharacterAppearanceAPI):
+        """
+        The World of Warcraft profile APIs listed below encompass profile game data.
+        https://develop.battle.net/documentation/world-of-warcraft/profile-apis
+        """
+        def __init__(self):
+            super().__init__(BlizzardWarcraftAPI.BlizzardAuthToken, BlizzardWarcraftAPI.region, BlizzardWarcraftAPI.locale)
+
+
 

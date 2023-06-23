@@ -7,7 +7,7 @@ from unittest import TestCase
 class Test_AuctionHouseAPI(BlizzardWarcraftAPI_test, TestCase):
 
     def test_Auctions(self):
-        self.BlizzardWarcraftAPI.get_Auctions(1305)
+        self.GameData.get_Auctions(1305)
 
     def test_Commodities(self):
-        self.BlizzardWarcraftAPI.get_Commodities()
+        self.GameData.get_Commodities()

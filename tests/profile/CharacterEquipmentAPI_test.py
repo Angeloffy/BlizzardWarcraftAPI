@@ -7,4 +7,4 @@ from unittest import TestCase
 class Test_CharacterEquipmentAPI(BlizzardWarcraftAPI_test, TestCase):
 
     def test_CharacterEncountersSummary(self):
-        self.BlizzardWarcraftAPI.get_CharacterEquipmentSummary("deepholm", "дъикиймвп")
+        self.Profile.get_CharacterEquipmentSummary("deepholm", "дъикиймвп")
