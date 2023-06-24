@@ -36,10 +36,16 @@ Below is what you can already use in your projects!
   - Creature Display Media: Returns media for a creature display by ID.
   - Creature Family Media: Returns media for a creature family by ID.
 
+
 - Guild Crest
   - Guild Crest Components Index: Returns an index of guild crest media.
   - Guild Crest Border Media: Returns media for a guild crest border by ID.
   - Guild Crest Emblem Media: Returns media for a guild crest emblem by ID.
+  
+
+- Heirloom
+  - Heirloom Index: Returns an index of heirlooms.
+  - Heirloom: Returns an heirloom by id.
 
 ## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
 
