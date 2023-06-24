@@ -37,6 +37,16 @@ Below is what you can already use in your projects!
   - Creature Family Media: Returns media for a creature family by ID.
 
 
+- Guild Crest
+  - Guild Crest Components Index: Returns an index of guild crest media.
+  - Guild Crest Border Media: Returns media for a guild crest border by ID.
+  - Guild Crest Emblem Media: Returns media for a guild crest emblem by ID.
+  
+
+- Heirloom
+  - Heirloom Index: Returns an index of heirlooms.
+  - Heirloom: Returns an heirloom by id.
+
 ## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
 
 
@@ -69,3 +79,11 @@ Below is what you can already use in your projects!
 
 - Character Hunter Pets
   - Character Equipment Summary: If the character is a hunter, returns a summary of the character's hunter pets. Otherwise, returns an HTTP 404 Not Found error.
+
+
+- Character Media API
+  - Character Media Summary: Returns a summary of the media assets available for a character (such as an avatar render).
+
+
+- Character Professions
+  - Character Professions Summary: Returns a summary of professions for a character.

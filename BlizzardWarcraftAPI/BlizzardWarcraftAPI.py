@@ -18,7 +18,9 @@ class BlizzardWarcraftAPI:
         BlizzardWarcraftAPI.region = region
         BlizzardWarcraftAPI.locale = locale
 
-    class GameData(AchievementAPI, AuctionHouseAPI, ConnectedRealmAPI, CreatureAPI):
+    class GameData(AchievementAPI, AuctionHouseAPI,
+                   ConnectedRealmAPI, CreatureAPI,
+                   GuildCrestAPI, HeirloomAPI):
         """
         The World of Warcraft game data APIs encompass both static and dynamic game data.
         https://develop.battle.net/documentation/world-of-warcraft/game-data-apis
@@ -28,7 +30,8 @@ class BlizzardWarcraftAPI:
 
     class Profile(CharacterAchievementsAPI, CharacterCollectionsAPI,
                   CharacterEquipmentAPI, CharacterEncountersAPI,
-                  CharacterHunterPetsAPI, CharacterAppearanceAPI):
+                  CharacterHunterPetsAPI, CharacterAppearanceAPI,
+                  CharacterMediaAPI, CharacterProfessionsAPI):
         """
         The World of Warcraft profile APIs listed below encompass profile game data.
         https://develop.battle.net/documentation/world-of-warcraft/profile-apis
