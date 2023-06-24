@@ -79,3 +79,7 @@ Below is what you can already use in your projects!
 
 - Character Hunter Pets
   - Character Equipment Summary: If the character is a hunter, returns a summary of the character's hunter pets. Otherwise, returns an HTTP 404 Not Found error.
+
+
+- Character Media API
+  - Character Media Summary: Returns a summary of the media assets available for a character (such as an avatar render).
