@@ -12,5 +12,6 @@ from .profile.CharacterEncountersAPI import CharacterEncountersAPI
 from .profile.CharacterEquipmentAPI import CharacterEquipmentAPI
 from .profile.CharacterHunterPetsAPI import CharacterHunterPetsAPI
 from .profile.CharacterMediaAPI import CharacterMediaAPI
+from .profile.CharacterProfessionsAPI import CharacterProfessionsAPI
 
 from BlizzardWarcraftAPI.BlizzardAuthToken import BlizzardAuthToken

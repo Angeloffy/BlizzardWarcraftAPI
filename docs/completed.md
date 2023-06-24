@@ -83,3 +83,7 @@ Below is what you can already use in your projects!
 
 - Character Media API
   - Character Media Summary: Returns a summary of the media assets available for a character (such as an avatar render).
+
+
+- Character Professions
+  - Character Professions Summary: Returns a summary of professions for a character.
