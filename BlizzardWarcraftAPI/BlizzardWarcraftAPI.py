@@ -18,7 +18,9 @@ class BlizzardWarcraftAPI:
         BlizzardWarcraftAPI.region = region
         BlizzardWarcraftAPI.locale = locale
 
-    class GameData(AchievementAPI, AuctionHouseAPI, ConnectedRealmAPI, CreatureAPI):
+    class GameData(AchievementAPI, AuctionHouseAPI,
+                   ConnectedRealmAPI, CreatureAPI,
+                   GuildCrestAPI):
         """
         The World of Warcraft game data APIs encompass both static and dynamic game data.
         https://develop.battle.net/documentation/world-of-warcraft/game-data-apis
