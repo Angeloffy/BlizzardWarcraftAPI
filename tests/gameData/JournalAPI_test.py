@@ -22,7 +22,7 @@ class Test_JournalAPI(BlizzardWarcraftAPI_test, TestCase):
         instance_name_en_US = "Deadmines"
         orderby = "id"
         page = 1
-        self.GameData.get_JournalEncounterSearch(instance_name_en_US, orderby, page)
+        pprint(self.GameData.get_JournalEncounterSearch(instance_name_en_US, orderby, page))
 
     def test_JournalInstancesIndex(self):
         self.GameData.get_JournalInstancesIndex()

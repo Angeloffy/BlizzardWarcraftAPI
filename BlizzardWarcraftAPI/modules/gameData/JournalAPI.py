@@ -56,7 +56,7 @@ class JournalAPI(BlizzardWarcraftAPI):
         """
         url = f"https://{self.region}.api.blizzard.com/data/wow/search/journal-encounter"
         self.param["namespace"] = self.namespace_static
-        self.param["instance_name_en_US"] = instance_name_en_US
+        self.param["instance.name.en_US"] = instance_name_en_US
         self.param["orderby"] = orderby
         self.param["_page"] = page
 
