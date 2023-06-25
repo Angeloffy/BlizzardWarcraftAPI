@@ -96,3 +96,8 @@ Below is what you can already use in your projects!
 
 - Character Professions
   - Character Professions Summary: Returns a summary of professions for a character.
+
+
+- Character Mythic Keystone Profile
+  - Character Mythic Keystone Profile Index: Returns the Mythic Keystone profile index for a character.
+  - Character Mythic Keystone Season Details: Returns the Mythic Keystone season details for a character.
