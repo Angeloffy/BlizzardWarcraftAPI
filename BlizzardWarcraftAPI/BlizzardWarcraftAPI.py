@@ -20,7 +20,8 @@ class BlizzardWarcraftAPI:
 
     class GameData(AchievementAPI, AuctionHouseAPI,
                    ConnectedRealmAPI, CreatureAPI,
-                   GuildCrestAPI, HeirloomAPI):
+                   GuildCrestAPI, HeirloomAPI,
+                   JournalAPI, ItemAPI):
         """
         The World of Warcraft game data APIs encompass both static and dynamic game data.
         https://develop.battle.net/documentation/world-of-warcraft/game-data-apis
@@ -31,13 +32,11 @@ class BlizzardWarcraftAPI:
     class Profile(CharacterAchievementsAPI, CharacterCollectionsAPI,
                   CharacterEquipmentAPI, CharacterEncountersAPI,
                   CharacterHunterPetsAPI, CharacterAppearanceAPI,
-                  CharacterMediaAPI, CharacterProfessionsAPI):
+                  CharacterMediaAPI, CharacterProfessionsAPI,
+                  CharacterMythicKeystoneProfile):
         """
         The World of Warcraft profile APIs listed below encompass profile game data.
         https://develop.battle.net/documentation/world-of-warcraft/profile-apis
         """
         def __init__(self):
             super().__init__(BlizzardWarcraftAPI.BlizzardAuthToken, BlizzardWarcraftAPI.region, BlizzardWarcraftAPI.locale)
-
-
-

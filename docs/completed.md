@@ -47,6 +47,15 @@ Below is what you can already use in your projects!
   - Heirloom Index: Returns an index of heirlooms.
   - Heirloom: Returns an heirloom by id.
 
+- Journal
+  - Journal Expansions Index: Returns an index of journal expansions.
+  - Journal Expansion: Returns a journal expansion by ID.
+  - Journal Encounters Index: Returns an index of journal encounters.
+  - Journal Encounter Search: Performs a search of journal encounters.
+  - Journal Instances Index: Returns an index of journal instances.
+  - Journal Instance: Returns a journal instance.
+  - Journal Instance Media: Returns media for a journal instance by ID.
+
 ## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
 
 
@@ -87,3 +96,19 @@ Below is what you can already use in your projects!
 
 - Character Professions
   - Character Professions Summary: Returns a summary of professions for a character.
+
+
+- Character Mythic Keystone Profile
+  - Character Mythic Keystone Profile Index: Returns the Mythic Keystone profile index for a character.
+  - Character Mythic Keystone Season Details: Returns the Mythic Keystone season details for a character.
+
+
+- Item
+  - Item Classes Index: Returns an index of item classes.
+  - Item Class: Returns an item class by ID.
+  - Item Sets Index: Returns an index of item sets.
+  - Item Set: Returns an item set by ID.
+  - Item Subclass: Returns an item subclass by ID.
+  - Item: Returns an item by ID.
+  - Item Media: Returns media for an item by ID.
+  - Item Search: Performs a search of items.
