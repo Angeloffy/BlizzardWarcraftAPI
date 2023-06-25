@@ -47,6 +47,15 @@ Below is what you can already use in your projects!
   - Heirloom Index: Returns an index of heirlooms.
   - Heirloom: Returns an heirloom by id.
 
+- Journal
+  - Journal Expansions Index: Returns an index of journal expansions.
+  - Journal Expansion: Returns a journal expansion by ID.
+  - Journal Encounters Index: Returns an index of journal encounters.
+  - Journal Encounter Search: Performs a search of journal encounters.
+  - Journal Instances Index: Returns an index of journal instances.
+  - Journal Instance: Returns a journal instance.
+  - Journal Instance Media: Returns media for a journal instance by ID.
+
 ## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
 
 

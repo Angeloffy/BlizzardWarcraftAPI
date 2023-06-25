@@ -4,6 +4,8 @@ from .gameData.ConnectedRealmAPI import ConnectedRealmAPI
 from .gameData.CreatureAPI import CreatureAPI
 from .gameData.GuildCrestAPI import GuildCrestAPI
 from .gameData.HeirloomAPI import HeirloomAPI
+from .gameData.JournalAPI import JournalAPI
+
 
 from .profile.CharacterAchievementsAPI import CharacterAchievementsAPI
 from .profile.CharacterAppearanceAPI import CharacterAppearanceAPI

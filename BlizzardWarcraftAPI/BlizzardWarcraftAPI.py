@@ -20,7 +20,7 @@ class BlizzardWarcraftAPI:
 
     class GameData(AchievementAPI, AuctionHouseAPI,
                    ConnectedRealmAPI, CreatureAPI,
-                   GuildCrestAPI, HeirloomAPI):
+                   GuildCrestAPI, HeirloomAPI, JournalAPI):
         """
         The World of Warcraft game data APIs encompass both static and dynamic game data.
         https://develop.battle.net/documentation/world-of-warcraft/game-data-apis
@@ -38,6 +38,3 @@ class BlizzardWarcraftAPI:
         """
         def __init__(self):
             super().__init__(BlizzardWarcraftAPI.BlizzardAuthToken, BlizzardWarcraftAPI.region, BlizzardWarcraftAPI.locale)
-
-
-
