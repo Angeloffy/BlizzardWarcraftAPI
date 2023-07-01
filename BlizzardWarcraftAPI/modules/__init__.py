@@ -1,4 +1,4 @@
-from .gameData.AchievementAPI import AchievementAPI
+from BlizzardWarcraftAPI.modules.gameData.AchievementAPI import AchievementAPI
 from .gameData.AuctionHouseAPI import AuctionHouseAPI
 from .gameData.ConnectedRealmAPI import ConnectedRealmAPI
 from .gameData.CreatureAPI import CreatureAPI
@@ -16,5 +16,4 @@ from .profile.CharacterHunterPetsAPI import CharacterHunterPetsAPI
 from .profile.CharacterMediaAPI import CharacterMediaAPI
 from .profile.CharacterProfessionsAPI import CharacterProfessionsAPI
 from .profile.CharacterMythicKeystoneProfile import CharacterMythicKeystoneProfile
-
-from BlizzardWarcraftAPI.BlizzardAuthToken import BlizzardAuthToken
+from .profile.AccountProfileAPI import AccountProfileAPI
