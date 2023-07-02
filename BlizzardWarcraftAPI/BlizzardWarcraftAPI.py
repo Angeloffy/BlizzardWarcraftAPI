@@ -33,7 +33,8 @@ class BlizzardWarcraftAPI:
                   CharacterEquipmentAPI, CharacterEncountersAPI,
                   CharacterHunterPetsAPI, CharacterAppearanceAPI,
                   CharacterMediaAPI, CharacterProfessionsAPI,
-                  CharacterMythicKeystoneProfile, AccountProfileAPI):
+                  CharacterMythicKeystoneProfile, AccountProfileAPI,
+                  CharacterProfileAPI):
         """
         The World of Warcraft profile APIs listed below encompass profile game data.
         https://develop.battle.net/documentation/world-of-warcraft/profile-apis

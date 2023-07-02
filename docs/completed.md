@@ -56,6 +56,16 @@ Below is what you can already use in your projects!
   - Journal Instance: Returns a journal instance.
   - Journal Instance Media: Returns media for a journal instance by ID.
 
+- Item
+  - Item Classes Index: Returns an index of item classes.
+  - Item Class: Returns an item class by ID.
+  - Item Sets Index: Returns an index of item sets.
+  - Item Set: Returns an item set by ID.
+  - Item Subclass: Returns an item subclass by ID.
+  - Item: Returns an item by ID.
+  - Item Media: Returns media for an item by ID.
+  - Item Search: Performs a search of items.
+
 ## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
 
 
@@ -103,12 +113,6 @@ Below is what you can already use in your projects!
   - Character Mythic Keystone Season Details: Returns the Mythic Keystone season details for a character.
 
 
-- Item
-  - Item Classes Index: Returns an index of item classes.
-  - Item Class: Returns an item class by ID.
-  - Item Sets Index: Returns an index of item sets.
-  - Item Set: Returns an item set by ID.
-  - Item Subclass: Returns an item subclass by ID.
-  - Item: Returns an item by ID.
-  - Item Media: Returns media for an item by ID.
-  - Item Search: Performs a search of items.
+- Character Profile
+  - Character Profile Summary: Returns a profile summary for a character.
+  - Character Profile Status: Returns the status and a unique ID for a character.
