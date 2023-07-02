@@ -17,3 +17,4 @@ from .profile.CharacterMediaAPI import CharacterMediaAPI
 from .profile.CharacterProfessionsAPI import CharacterProfessionsAPI
 from .profile.CharacterMythicKeystoneProfile import CharacterMythicKeystoneProfile
 from .profile.AccountProfileAPI import AccountProfileAPI
+from .profile.CharacterProfileAPI import CharacterProfileAPI
