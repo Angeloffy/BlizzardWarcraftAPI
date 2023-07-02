@@ -116,3 +116,8 @@ Below is what you can already use in your projects!
 - Character Profile
   - Character Profile Summary: Returns a profile summary for a character.
   - Character Profile Status: Returns the status and a unique ID for a character.
+
+
+- Character PvP
+  - Character PvP Bracket Statistics: Returns the PvP bracket statistics for a character.
+  - Character PvP Summary: Returns a PvP summary for a character.
