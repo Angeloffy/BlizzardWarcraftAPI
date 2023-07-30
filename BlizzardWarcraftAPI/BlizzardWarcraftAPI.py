@@ -41,3 +41,9 @@ class BlizzardWarcraftAPI:
         """
         def __init__(self):
             super().__init__(BlizzardWarcraftAPI.BlizzardAuthToken, BlizzardWarcraftAPI.region, BlizzardWarcraftAPI.locale)
+
+    class Request(hrefAPI):
+        
+        def __init__(self):
+            super().__init__(BlizzardWarcraftAPI.BlizzardAuthToken, BlizzardWarcraftAPI.region, BlizzardWarcraftAPI.locale)
+

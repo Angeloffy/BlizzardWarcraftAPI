@@ -19,3 +19,5 @@ from .profile.CharacterMythicKeystoneProfile import CharacterMythicKeystoneProfi
 from .profile.AccountProfileAPI import AccountProfileAPI
 from .profile.CharacterProfileAPI import CharacterProfileAPI
 from .profile.CharacterPvPAPI import CharacterPvPAPI
+
+from .request.href import hrefAPI
