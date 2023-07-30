@@ -16,3 +16,6 @@ class BlizzardWarcraftAPI_test():
         api = BlizzardWarcraftAPI(self.token, self.region, self.locale)
         self.GameData = api.GameData()
         self.Profile = api.Profile()
+        self.Request = api.Request()
+
+
