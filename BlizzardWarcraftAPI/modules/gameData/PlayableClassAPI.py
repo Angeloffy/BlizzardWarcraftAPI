@@ -14,7 +14,7 @@ class PlayableClassAPI(BlizzardWarcraftAPI):
 
     def get_PlayableClass(self, classId: int) -> dict:
         """
-        :return: Returns an index of playable classes.
+        :return: Returns a playable class by ID.
         :param classId: The ID of the playable class.
         :rtype: dict
         """
@@ -24,7 +24,7 @@ class PlayableClassAPI(BlizzardWarcraftAPI):
 
     def get_PlayableClassMedia(self, playableClassId: int) -> dict:
         """
-        :return: Returns an index of playable classes.
+        :return: Returns media for a playable class by ID.
         :param playableClassId: The ID of the playable class.
         :rtype: dict
         """
@@ -34,7 +34,7 @@ class PlayableClassAPI(BlizzardWarcraftAPI):
 
     def get_PvPTalentSlots(self, classId: int) -> dict:
         """
-        :return: Returns an index of playable classes.
+        :return: Returns the PvP talent slots for a playable class by ID.
         :param classId: The ID of the playable class.
         :rtype: dict
         """
