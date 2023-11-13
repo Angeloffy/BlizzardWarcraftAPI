@@ -6,6 +6,8 @@ from .gameData.GuildCrestAPI import GuildCrestAPI
 from .gameData.HeirloomAPI import HeirloomAPI
 from .gameData.JournalAPI import JournalAPI
 from .gameData.ItemAPI import ItemAPI
+from .gameData.PlayableClassAPI import PlayableClassAPI
+from .gameData.PlayableRaceAPI import PlayableRaceAPI
 
 from .profile.CharacterAchievementsAPI import CharacterAchievementsAPI
 from .profile.CharacterAppearanceAPI import CharacterAppearanceAPI

@@ -21,7 +21,7 @@ class BlizzardWarcraftAPI:
     class GameData(AchievementAPI, AuctionHouseAPI,
                    ConnectedRealmAPI, CreatureAPI,
                    GuildCrestAPI, HeirloomAPI,
-                   JournalAPI, ItemAPI):
+                   JournalAPI, ItemAPI, PlayableClassAPI, PlayableRaceAPI):
         """
         The World of Warcraft game data APIs encompass both static and dynamic game data.
         https://develop.battle.net/documentation/world-of-warcraft/game-data-apis
