@@ -66,6 +66,19 @@ Below is what you can already use in your projects!
   - Item Media: Returns media for an item by ID.
   - Item Search: Performs a search of items.
 
+- Playable Class
+  - Playable Classes Index: Returns an index of playable classes.
+  - Playable Class: Returns a playable class by ID.
+  - Playable Class Media: Returns media for a playable class by ID.
+  - PvP Talent Slots: Returns the PvP talent slots for a playable class by ID.
+
+- Playable Race
+  - Playable Races Index: Returns an index of playable races.
+  - Playable Race: Returns a playable race by ID.
+
+
+
+
 ## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
 
 
