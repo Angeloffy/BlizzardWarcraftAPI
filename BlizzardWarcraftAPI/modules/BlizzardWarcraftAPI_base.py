@@ -7,7 +7,6 @@ from ..urls import URL_TOKEN_VALIDATION
 class BlizzardWarcraftAPI:
     @staticmethod
     def response(url, param):
-        print(param)
         resp = requests.get(url, params=param)
         return resp.json()
 
