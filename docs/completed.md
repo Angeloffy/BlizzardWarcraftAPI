@@ -76,7 +76,12 @@ Below is what you can already use in your projects!
   - Playable Races Index: Returns an index of playable races.
   - Playable Race: Returns a playable race by ID.
 
-
+- PvP Season API
+  - PvP Seasons Index: Returns an index of PvP seasons.
+  - PvP Season: Returns a PvP season by ID.
+  - PvP Leaderboards Index: Returns an index of PvP leaderboards for a PvP season.
+  - PvP Leaderboard: Returns the PvP leaderboard of a specific PvP bracket for a PvP season.
+  - PvP Rewards Index: Returns an index of PvP rewards for a PvP season.
 
 
 ## [Profile](https://develop.battle.net/documentation/world-of-warcraft/profile-apis)
