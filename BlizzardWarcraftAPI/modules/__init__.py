@@ -8,6 +8,7 @@ from .gameData.JournalAPI import JournalAPI
 from .gameData.ItemAPI import ItemAPI
 from .gameData.PlayableClassAPI import PlayableClassAPI
 from .gameData.PlayableRaceAPI import PlayableRaceAPI
+from .gameData.PvPSeasonAPI import PvPSeasonAPI
 
 from .profile.CharacterAchievementsAPI import CharacterAchievementsAPI
 from .profile.CharacterAppearanceAPI import CharacterAppearanceAPI

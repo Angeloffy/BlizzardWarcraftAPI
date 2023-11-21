@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "BlizzardWarcraftAPI"
-version = "0.2.6"
+version = "0.2.7"
 authors = ["Angeloffy <angeloffy.work@gmail.com>"]
 maintainers = [
     "Angeloffy <angeloffy.work@gmail.com>",
