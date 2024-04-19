@@ -13,4 +13,4 @@ class hrefAPI(BlizzardWarcraftAPI):
         """
 
         resp = requests.get(href, params=self.param)
-        return resp.json()
+        return resp
